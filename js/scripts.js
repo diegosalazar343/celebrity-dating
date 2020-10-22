@@ -5,11 +5,11 @@ function determineResults(input1, input2, input3, input4, input5) {
   if(valTotal <= 8) {
     celebrity = "Mario";
   } else if (valTotal <= 12) {
-    celebrity = "Ratioullie";
+    celebrity = "Remy";
   } else if (valTotal <=16) {
-    celebrity = "Edward";
+    celebrity = "Edward Cullen";
   } else {
-    character="Santa Clause";
+    celebrity = "Santa Clause";
   }
   return celebrity;
 }
@@ -34,12 +34,12 @@ $(document).ready(function() {
       $('#celebrity').text("Mario");
       $(".image").hide();
       $("#Mario").show();
-    } else if (celebrity === "Ratatouille") {
+    } else if (celebrity === "Remy") {
       $('#answer').hide();
       $('#answer').show();
-      $('#celebrity').text("Ratatouille");
+      $('#celebrity').text("Remy");
       $(".image").hide();
-      $("#Ratatouille").show();
+      $("#Remy").show();
     } else if (celebrity === "Edward Cullen") {
       $('#answer').hide();
       $('#answer').show();
