@@ -25,8 +25,33 @@ $(document).ready(function() {
     const holiday = parseInt($("#holiday").val());
     const christmas = parseInt($("#christmas").val());
     const animal = parseInt($("#animal").val());
-    let celebrityResults = determineResults(travel, food, holiday, christmas, animal);
-//after break work on if else statements below
+    let celebrity = determineResults(travel, food, holiday, christmas, animal);
 
+
+    if (celebrity === "Mario") {
+      $('#answer').hide();
+      $('#answer').show();
+      $('#celebrity').text("Mario");
+      $(".image").hide();
+      $("#Mario").show();
+    } else if (celebrity === "Ratatouille") {
+      $('#answer').hide();
+      $('#answer').show();
+      $('#celebrity').text("Ratatouille");
+      $(".image").hide();
+      $("#Ratatouille").show();
+    } else if (celebrity === "Edward Cullen") {
+      $('#answer').hide();
+      $('#answer').show();
+      $('#celebrity').text("Edward Cullen");
+      $(".image").hide();
+      $("#EdwardCullen").show();
+    } else {
+      $('#answer').hide();
+      $('#answer').show();
+      $('#celebrity').text("Santa Clause");
+      $(".image").hide();
+      $("#SantaClause").show();
+    }
   });
 });
